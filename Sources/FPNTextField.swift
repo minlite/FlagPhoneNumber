@@ -19,7 +19,7 @@ open class FPNTextField: UITextField, UITextFieldDelegate {
     }
     
     @IBInspectable
-    var manualPhoneCode: Bool = false {
+    open var manualPhoneCode: Bool = false {
         didSet {
             layoutIfNeeded()
             setup()
